@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNOW AI - Your Personal Human-Centered AI Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Crimson+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- SECTION 1: HERO -->
+    <section id="hero" class="hero-section">
+        <video class="hero-video" autoplay muted loop>
+            <source src="bg.mp4" type="video/mp4">
+        </video>
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <img src="dgdark-removebg-preview.png" alt="" srcset="">
+            </div>
+            <h1 class="hero-title">SNOW AI</h1>
+            <p class="hero-subtitle">Your Personal Human-Centered AI Companion</p>
+            <p class="hero-description">A journey through self-discovery, guided by compassionate intelligence</p>
+            <div class="scroll-indicator">
+                <span>Scroll to Begin</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+        <style>
+            .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            }
+            .hero-content {
+            position: relative;
+            z-index: 1;
+            color: white; /* Adjust text color for visibility */
+            }
+            .hero-logo {
+            position: fixed;
+            top: 20px;
+            left: 10px;
+            z-index: 10;
+            }
+            .hero-logo img {
+            width: 60px;
+            height: auto;
+            }
+        </style>
+    </section>
+
+    <!-- SECTION 2: PORTALS -->
+    <section id="portals" class="portals-section">
+        <div class="portals-intro">
+            <h2 class="section-title">Your Journey in Three Steps</h2>
+            <p class="section-description">Each portal unlocks a deeper understanding of your inner world</p>
+        </div>
+
+        <!-- PORTAL 1: JOURNALING -->
+        <div class="portal" id="portal-1" data-portal="1">
+            <div class="portal-card">
+                <div class="portal-number">01</div>
+                <div class="portal-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <path d="M8 12C8 9.79086 9.79086 8 12 8H28L40 20V36C40 38.2091 38.2091 40 36 40H12C9.79086 40 8 38.2091 8 36V12Z" stroke="currentColor" stroke-width="2"/>
+                        <path d="M16 20H32M16 26H32M16 32H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="portal-title">Step 1: Journaling & Conversation</h3>
+                <p class="portal-description">Share your thoughts freely in a safe, judgment-free space</p>
+                <div class="portal-status">
+                    <span class="status-badge locked">Locked</span>
+                </div>
+                <button class="portal-button" disabled>
+                    <span class="button-text">Begin Journey</span>
+                    <span class="button-icon">→</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- PORTAL 2: ENQUIRY -->
+        <div class="portal" id="portal-2" data-portal="2">
+            <div class="portal-card locked-portal">
+                <div class="lock-overlay">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect x="10" y="14" width="12" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 14V10C13 8.34315 14.3431 7 16 7C17.6569 7 19 8.34315 19 10V14" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="portal-number">02</div>
+                <div class="portal-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/>
+                        <path d="M24 18V24L28 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="portal-title">Step 2: Guided Reflection</h3>
+                <p class="portal-description">Answer thoughtful questions to explore your mental landscape</p>
+                <div class="portal-status">
+                    <span class="status-badge locked">Complete Step 1 to Unlock</span>
+                </div>
+                <button class="portal-button" disabled>
+                    <span class="button-text">Locked</span>
+                    <span class="button-icon">🔒</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- PORTAL 3: FACE SCAN -->
+        <div class="portal" id="portal-3" data-portal="3">
+            <div class="portal-card locked-portal">
+                <div class="lock-overlay">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect x="10" y="14" width="12" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 14V10C13 8.34315 14.3431 7 16 7C17.6569 7 19 8.34315 19 10V14" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="portal-number">03</div>
+                <div class="portal-icon">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                        <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="18" cy="20" r="2" fill="currentColor"/>
+                        <circle cx="30" cy="20" r="2" fill="currentColor"/>
+                        <path d="M18 28C18 28 20 32 24 32C28 32 30 28 30 28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3 class="portal-title">Step 3: Emotional Resonance Scan</h3>
+                <p class="portal-description">Let AI analyze your emotional state through facial recognition</p>
+                <div class="portal-status">
+                    <span class="status-badge locked">Complete Step 2 to Unlock</span>
+                </div>
+                <button class="portal-button" disabled>
+                    <span class="button-text">Locked</span>
+                    <span class="button-icon">🔒</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- FINAL PORTAL: RESULTS -->
+        <div class="portal" id="portal-final" data-portal="final">
+            <div class="portal-card locked-portal final-portal">
+                <div class="lock-overlay">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect x="10" y="14" width="12" height="10" rx="2" stroke="currentColor" stroke-width="2"/>
+                        <path d="M13 14V10C13 8.34315 14.3431 7 16 7C17.6569 7 19 8.34315 19 10V14" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="portal-icon final-icon">
+                    <svg width="64" height="64" viewBox="0 0 64 64" fill="none">
+                        <path d="M32 8L36 20L48 16L42 28L54 32L42 36L48 48L36 44L32 56L28 44L16 48L22 36L10 32L22 28L16 16L28 20L32 8Z" fill="url(#finalGradient)"/>
+                        <defs>
+                            <linearGradient id="finalGradient" x1="10" y1="8" x2="54" y2="56">
+                                <stop offset="0%" stop-color="#B8E5FF"/>
+                                <stop offset="100%" stop-color="#E0F4FF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h3 class="portal-title">Your Personal Companion Report</h3>
+                <p class="portal-description">A complete understanding of your mental wellness journey</p>
+                <div class="portal-status">
+                    <span class="status-badge locked">Complete All Steps to Unlock</span>
+                </div>
+                <button class="portal-button" disabled>
+                    <span class="button-text">Locked</span>
+                    <span class="button-icon">🔒</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- MODAL: PORTAL 1 - JOURNALING CHATBOT -->
+    <div id="modal-1" class="portal-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Journaling & Conversation</h2>
+                <div class="timer-display">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2"/>
+                        <path d="M10 6V10L13 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span id="timer-1">10:00</span>
+                </div>
+                <button class="close-modal" data-modal="1">×</button>
+            </div>
+            <div class="chat-container" id="chat-1">
+                <div class="chat-messages" id="messages-1">
+                    <div class="message ai-message">
+                        <div class="message-content">
+                            <p>Hello! I'm here to listen. This is a safe space for you to share your thoughts, feelings, or anything on your mind. Take your time, and feel free to express yourself freely.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-input-1" placeholder="Share your thoughts..." />
+                <button id="send-btn-1" class="send-button">
+                    <span>Send</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: PORTAL 2 - ENQUIRY QUESTIONS -->
+    <div id="modal-2" class="portal-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Guided Reflection</h2>
+                <div class="progress-display">
+                    <span id="question-progress">Question <span id="current-q">1</span> of <span id="total-q">10</span></span>
+                </div>
+                <button class="close-modal" data-modal="2">×</button>
+            </div>
+            <div class="enquiry-container" id="enquiry-container">
+                <div class="question-card">
+                    <div class="question-number">Question <span id="q-num">1</span></div>
+                    <h3 class="question-text" id="question-text"></h3>
+                    <textarea id="answer-input" placeholder="Take your time to reflect and answer..." rows="6"></textarea>
+                    <div class="question-actions">
+                        <button id="next-question" class="action-button">
+                            <span>Next Question</span>
+                            <span>→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: PORTAL 3 - FACE SCAN -->
+    <div id="modal-3" class="portal-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Emotional Resonance Scan</h2>
+                <button class="close-modal" data-modal="3">×</button>
+            </div>
+            <div class="scan-container" id="scan-container">
+                <div id="scan-prompt" class="scan-prompt">
+                    <div class="scan-icon">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="30" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="30" cy="35" r="4" fill="currentColor"/>
+                            <circle cx="50" cy="35" r="4" fill="currentColor"/>
+                            <path d="M30 50C30 50 33 56 40 56C47 56 50 50 50 50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Enable Camera for Emotional Analysis</h3>
+                    <p>We'll analyze subtle facial cues to understand your current emotional state. Your privacy is protected - no images are stored.</p>
+                    <button id="start-scan" class="action-button large">
+                        <span>Start Scan</span>
+                        <span>📷</span>
+                    </button>
+                </div>
+                <div id="scan-active" class="scan-active" style="display: none;">
+                    <div class="video-container">
+                        <video id="video-feed" autoplay playsinline></video>
+                        <canvas id="scan-canvas"></canvas>
+                        <div class="scan-overlay">
+                            <div class="scan-frame"></div>
+                            <div class="scan-lines"></div>
+                        </div>
+                    </div>
+                    <div class="scan-status">
+                        <div class="status-message" id="scan-status">Initializing scan...</div>
+                        <div class="scan-progress">
+                            <div class="progress-bar" id="scan-progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL: FINAL REPORT -->
+    <div id="modal-final" class="portal-modal">
+        <div class="modal-content final-modal-content">
+            <div class="modal-header">
+                <h2>Your Personal Companion Report</h2>
+                <button class="close-modal" data-modal="final">×</button>
+            </div>
+            <div class="report-container" id="report-container">
+                <div class="report-loading" id="report-loading">
+                    <div class="loading-spinner"></div>
+                    <p>Analyzing your journey...</p>
+                </div>
+                <div class="report-content" id="report-content" style="display: none;">
+                    <!-- Report will be generated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- FOOTER SECTION -->
+    <footer class="footer-section">
+        <div class="footer-background-orb"></div>
+        <div class="footer-background-orb"></div>
+        
+        <div class="footer-content">
+            <div class="footer-top">
+                <!-- Brand & Newsletter -->
+                <div class="footer-brand">
+                    <div class="footer-logo-container">
+                        <img src="dgdark-removebg-preview.png" alt="SNOW AI Logo" class="footer-logo-image" width="80px">
+                    </div>
+                    
+                    <h3 class="footer-title">SNOW AI</h3>
+                    <p class="footer-tagline">Your Personal Human-Centered AI Companion</p>
+                    <p class="footer-description">
+                        Empowering mental wellness through compassionate AI technology. 
+                        Experience personalized journaling, guided reflection, and holistic emotional analysis.
+                    </p>
+
+                    <!-- Newsletter -->
+                    <div class="footer-newsletter">
+                        <div class="newsletter-title">
+                            <img src="dragonlogo-removebg-preview.png" width="500vw" alt="">
+                            <span>Stay Updated</span>
+                        </div>
+                        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+                            <input 
+                                type="email" 
+                                class="newsletter-input" 
+                                placeholder="Enter your email"
+                                required
+                            />
+                            <button type="submit" class="newsletter-button">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <div class="footer-left">
+                    <div class="footer-copyright">
+                        <p>&copy; 2026 SNOW AI. All rights reserved.</p>
+                        <span class="footer-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                            </svg>
+                            AI Powered
+                        </span>
+                   
+        <footer class="site-footer" role="contentinfo" aria-label="Site footer">
+  <div class="footer-inner">
+    <div class="footer-frame">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#">Journaling</a></li>
+            <li><a href="#">Reflection</a></li>
+            <li><a href="#">Face Scan</a></li>
+            <li><a href="#">Companion Report</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Partners</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:hello@snowai.example">hello@snowai.example</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Press Inquiries</a></li>
+            <li><a href="#">Request Demo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-cta">
+        <div class="footer-newsletter">
+          <input type="email" placeholder="Your email for updates" aria-label="Email">
+          <button type="button">Subscribe</button>
+        </div>
+        <div class="socials">
+          <a class="social" href="#" aria-label="Twitter">T</a>
+          <a class="social" href="#" aria-label="GitHub">G</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="legal">© 2026 SNOW AI · <a href="#">Privacy</a> · <a href="#">Terms</a></div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>Built with care — Your mental wellbeing matters.</p>
+  </div>
+   </div>
+                    <p class="footer-note">Built with ❤️ for Mental Wellness & Human Connection</p>
+                </div>
+                
+                <div class="footer-right">
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <a href="#top" class="back-to-top">
+                        <span>↑</span>
+                        <span>Top</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+</footer>
+    </footer>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
